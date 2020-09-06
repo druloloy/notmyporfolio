@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F1F0CC;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3F0D12;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #F1F1F1;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #A71D31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#welcome-section nav {
+  width: 100%;
+  height: 5%;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#welcome-section nav a {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  color: #F1F0CC;
+  text-decoration: none;
+  margin: 15px 25px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+#welcome-section #avatar-background {
+  height: 500px;
+  width: 350px;
+  overflow: hidden;
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+  right: 10%;
+}
+
+#welcome-section #avatar-background #mz {
+  height: 100%;
+  width: 100%;
+}
+
+#welcome-section #text-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #F1F0CC;
+  margin: auto;
+}
+
+#welcome-section #text-container h1 {
+  text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+  font-size: 130px;
+  text-align: center;
+}
+
+#welcome-section #text-container h1:after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 2px solid #F1F0CC;
+}
+
+#welcome-section #text-container p {
+  opacity: .58;
+  font-family: "Varela Round", sans-serif;
+  font-size: 25px;
+  color: #F1F0CC;
+}
+
+#banner-company {
+  height: 40%;
+  width: 100%;
+  font-size: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3F0D12;
+  background-image: url("../res/bg.jpg");
+  background-size: cover;
+}
+
+#banner-company .banner-icon {
+  margin: auto;
+}
+
+#banner-company .banner-icon .fab {
+  color: #A71D31;
+}
+
+#projects-section {
+  height: 80%;
+  width: 100%;
+  background: #F1F0CC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#projects-section #projects {
+  margin: auto;
+  height: 65%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects-section #projects h2 {
+  width: 100%;
+}
+
+#projects-section #projects .project-tile {
+  border-radius: 15px;
+  margin: auto;
+  height: 100%;
+  width: 300px;
+  padding: 20px 10px;
+}
+
+#projects-section #projects .project-tile img {
+  height: 70%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#projects-section #projects .project-tile #project-label {
+  padding: 5px;
+  color: #3F0D12;
+}
+
+#projects-section #projects .project-tile #project-label h2 {
+  font-family: "Kanit", sans-serif;
+}
+
+#projects-section #projects .project-tile #project-label p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#projects-section #projects .project-tile #project-button {
+  height: 15%;
+  margin-top: 5px;
+  padding: 3px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#projects-section #projects .project-tile #project-button a {
+  font-family: "Varela Round", sans-serif;
+  color: #A71D31;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#projects-section #projects .project-tile:hover {
+  background: #A71D31;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+#projects-section #projects .project-tile:hover #project-button a,
+#projects-section #projects .project-tile:hover #project-label {
+  color: #F1F0CC;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.label-holder {
+  font-family: "Kanit", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.label-holder h2 {
+  margin-left: 10%;
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #A71D31;
+}
+
+.label-holder:after {
+  content: "";
+  width: 20%;
+  padding-top: 30px;
+  border-bottom: 3px solid #A71D31;
+}
+
+@media only screen and (min-width: 680px) {
+  #welcome-section img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

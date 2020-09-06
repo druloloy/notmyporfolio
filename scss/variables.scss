@@ -1,0 +1,21 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+$Kanit: 'Kanit',sans-serif;
+$SourceSans: 'Source Sans Pro', sans-serif;
+$Varela: 'Varela Round', sans-serif;
+// theme
+$primary: #A71D31;
+$secondary: #F1F0CC;
+$accent: #3F0D12;
+$bodyBG: #F1F1F1;
+
+//mixins
+
+@mixin GradientText($direction,$color1, $color2) {
+    background: -webkit-linear-gradient($direction, $color1, $color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
